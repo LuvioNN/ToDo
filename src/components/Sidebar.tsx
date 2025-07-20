@@ -1,5 +1,4 @@
 import React from 'react';
-import './Sidebar.scss';
 
 interface SidebarProps {
   section: 'todo' | 'diary';

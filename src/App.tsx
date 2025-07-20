@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import ToDoList from './components/ToDoList';
 import Diary from './components/Diary';
-import './App.scss';
+
+import './assets/scss/main.scss';
 
 const App: React.FC = () => {
   const [section, setSection] = useState<'todo' | 'diary'>('todo');

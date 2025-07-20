@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Diary.scss';
+
 
 const LOCAL_STORAGE_KEY = 'diary-entries';
 

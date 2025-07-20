@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ToDoList.scss';
+
 
 const LOCAL_STORAGE_KEY = 'todo-list';
 
