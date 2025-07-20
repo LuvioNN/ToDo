@@ -1,10 +1,17 @@
 .sidebar {
-  width: 220px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 60px);
   background: #23272f;
   color: #fff;
-  min-height: 100vh;
-  padding: 32px 0px;
+  padding: 32px 0;
   box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .sidebar nav ul {
   list-style: none;
@@ -19,4 +26,4 @@
 }
 .sidebar__item:hover, .sidebar__item.active {
   background: #353b48;
-} 
+}
