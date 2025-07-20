@@ -1,0 +1,22 @@
+.sidebar {
+  width: 220px;
+  background: #23272f;
+  color: #fff;
+  min-height: 100vh;
+  padding: 32px 0;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+}
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar__item {
+  padding: 14px 32px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+.sidebar__item:hover, .sidebar__item.active {
+  background: #353b48;
+} 
