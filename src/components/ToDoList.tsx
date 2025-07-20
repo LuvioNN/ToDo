@@ -23,6 +23,10 @@ const ToDoList: React.FC = () => {
     setInput('');
   };
 
+  const handleDelete = (index: number) => {
+    setTodos(todos.filter((_, i) => i !== index));
+  };
+
   return (
     <div className="todo-list">
       <h2>Ваши задачи</h2>
@@ -41,7 +45,15 @@ const ToDoList: React.FC = () => {
           <div className="todo-list__empty">Нет задач</div>
         ) : (
           todos.map((todo, idx) => (
-            <div className="todo-list__item" key={idx}>{todo}</div>
+            <div className="todo-list__item" key={idx}>
+              <span className="todo-list__text">{todo}</span>
+              <button 
+                className="todo-list__delete-btn"
+                onClick={() => handleDelete(idx)}
+              >
+                Удалить
+              </button>
+            </div>
           ))
         )}
       </div>
