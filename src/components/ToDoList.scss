@@ -77,4 +77,19 @@
 }
 .todo-list__delete-btn:hover {
   background: #c82333;
+}
+.todo-list__delete-all-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.todo-list__delete-all-btn:hover {
+  background: #c82333;
 } 

@@ -7,8 +7,8 @@ const Sidebar: React.FC = () => {
       <nav>
         <ul>
           <li className="sidebar__item active">ToDo List</li>
-          <li className="sidebar__item">Раздел 2 (скоро)</li>
-          <li className="sidebar__item">Раздел 3 (скоро)</li>
+          <li className="sidebar__item">Unknown now #1</li>
+          <li className="sidebar__item">Unknown now #2</li>
         </ul>
       </nav>
     </aside>
