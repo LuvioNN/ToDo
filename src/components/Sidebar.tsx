@@ -1,26 +1,17 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-interface SidebarProps {
-  section: 'todo' | 'diary';
-  setSection: (section: 'todo' | 'diary') => void;
-}
-
-const Sidebar: React.FC<SidebarProps> = ({ section, setSection }) => {
+const Sidebar: React.FC = () => {
+  const location = useLocation();
   return (
     <aside className="sidebar">
       <nav>
         <ul>
-          <li
-            className={`sidebar__item${section === 'todo' ? ' active' : ''}`}
-            onClick={() => setSection('todo')}
-          >
-            ToDo List
+          <li className={`sidebar__item${location.pathname === '/todo' ? ' active' : ''}`}>
+            <Link to="/todo">ToDo List</Link>
           </li>
-          <li
-            className={`sidebar__item${section === 'diary' ? ' active' : ''}`}
-            onClick={() => setSection('diary')}
-          >
-            Diary
+          <li className={`sidebar__item${location.pathname === '/diary' ? ' active' : ''}`}>
+            <Link to="/diary">Diary</Link>
           </li>
           <li className="sidebar__item">Unknown now #3</li>
         </ul>

@@ -12,11 +12,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  
 }
 .sidebar nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  li{
+    link{
+      text-decoration: none;
+    }
+  }
+  
 }
 .sidebar__item {
   padding: 14px 32px;
